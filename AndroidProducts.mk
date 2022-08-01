@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_guacamoleb.mk
+    $(LOCAL_DIR)/xperience_guacamoleb.mk

@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xperience/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_guacamoleb
+PRODUCT_NAME := xperience_guacamoleb
 PRODUCT_DEVICE := guacamoleb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1905
@@ -33,9 +33,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2240
 TARGET_SCREEN_WIDTH := 1080
-
-# Extra Google/Pixel features
-TARGET_SUPPORTS_QUICK_TAP := true
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
